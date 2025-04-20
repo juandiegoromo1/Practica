@@ -11,6 +11,7 @@ namespace Practica
         static void Main(string[] args)
         {
             Console.WriteLine("hola");
+            Console.WriteLine("JA");
         }
     }
 }
