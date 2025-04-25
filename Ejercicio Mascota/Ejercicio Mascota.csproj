@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{52E561F0-3134-4919-93B2-4E654D99C0FF}</ProjectGuid>
+    <ProjectGuid>{D4503C1B-0F8F-4537-A7AC-EF54644767AB}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Practica</RootNamespace>
-    <AssemblyName>Practica</AssemblyName>
+    <RootNamespace>Ejercicio_Mascota</RootNamespace>
+    <AssemblyName>Ejercicio Mascota</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,13 +43,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Enemigo.cs" />
     <Compile Include="Juego.cs" />
-    <Compile Include="Jugador.cs" />
+    <Compile Include="Mascota.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TurnoEnemigo.cs" />
-    <Compile Include="TurnoJugador.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

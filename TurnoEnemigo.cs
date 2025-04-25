@@ -6,12 +6,7 @@ using System.Threading.Tasks;
 
 namespace Practica
 {
-    internal class Program
+    internal class TurnoEnemigo
     {
-        static void Main(string[] args)
-        {
-            Juego menu = new Juego();
-            menu.Execute();
-        }
     }
 }
