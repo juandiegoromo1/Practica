@@ -11,33 +11,22 @@ namespace Ejercicio_Mascota
         private Mascota mascota;
         public void Execute()
         {
-            CrearMascota();
-
             while (true)
             {
-                Console.WriteLine("\n¿Qué quieres hacer?");
-                Console.WriteLine("1. Alimentar mascota");
-                Console.WriteLine("2. Jugar con mascota");
-                Console.WriteLine("3. Salir");
+                Console.WriteLine("¿Que quieres Hacer? ");
+                Console.WriteLine("1. Crear mascota ");
+                Console.WriteLine("2  Alimentar Mascota ");
+                Console.WriteLine("3 Jugar Mascota ");
+                Console.WriteLine("4 Salir ");
+                
+                int opcion = int.Parse(Console.ReadLine());
 
-                string opcion = Console.ReadLine();
-
-                if (opcion == "1")
+                switch (opcion)
                 {
-                    AlimentarMascota();
-                }
-                else if (opcion == "2")
-                {
-                    JugarMascota();
-                }
-                else if (opcion == "3")
-                {
-                    Console.WriteLine("¡Hasta luego!");
-                    break;
-                }
-                else
-                {
-                    Console.WriteLine("Opción no válida. Intenta otra vez.");
+                    case 1: CrearMascota();break;
+                    case 2: AlimentarMascota();break;
+                    case 3: JugarMascota();break;
+                    case 4: Salir();break;
                 }
             }
         }
@@ -63,6 +52,10 @@ namespace Ejercicio_Mascota
             Console.WriteLine("Introduce la cantidad de juego con tu mascota:");
             int cantidad = int.Parse(Console.ReadLine());
             mascota.JugarConMascota(cantidad);
+        }
+        public void Salir()
+        {
+            Console.WriteLine(" Fin del Juego ");
         }
     }
 }
